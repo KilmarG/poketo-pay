@@ -14,7 +14,7 @@ services:
 
     certbot:
         image: certbot/certbot:latest
-        command: certonly --webroot --webroot-path=/var/www/certbot --email kilmar.999@gmail.om --agree-tos --no-eff-email -d poketo.link -d pay.poketo.link
+        command: certonly --webroot --webroot-path=/var/www/certbot --email kilmar.999@gmail.com --agree-tos --no-eff-email -d poketo.link -d pay.poketo.link
         volumes:
             - ./certbot/conf:/etc/letsencrypt
             - ./certbot/logs:/var/log/letsencrypt
